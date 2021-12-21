@@ -1,0 +1,50 @@
+const d = new Date();
+document.getElementById("data").innerHTML = d.toDateString();
+let dati = {};
+fetchDati();
+
+function fetchDati(){
+    fetch('http://localhost:3000/articoli/').then(response => response.json())
+    .then(json=>{
+        dati = json;
+        console.log(dati);
+        let contatag1=0;
+        for(elem in dati){
+            CaricaDati(contatag1);
+            contatag1++;
+        }
+    })
+    .catch(err=>console.log(err));
+}
+
+function CaricaDati(contatag1){
+    for(elem in dati){
+        if(dati[elem].tags[0]==="#Economia" || dati[elem].tags[1]==="#Economia")
+        {
+            let conta1=1;
+            let conta2=2;
+            let img = document.createElement("img");
+            let desc = document.createElement("p");
+            let tag1=document.createElement("span");
+            let tag2=document.createElement("span");
+            let linktag1=document.createElement("a");
+            let linktag2=document.createElement("a");
+            linktag1.href="./"+dati[elem].tags[0].substring(1)+".html";
+            linktag2.href="./"+dati[elem].tags[1].substring(1)+".html";
+            img.src =dati[elem].linkImm;
+            desc.innerHTML=dati[elem].descrizione;
+            tag1.innerHTML=dati[elem].tags[0];
+            tag2.innerHTML=dati[elem].tags[1];
+            // img.setAttribute("class","item3");
+            // desc.setAttribute("class","item5");
+            linktag1.setAttribute("id","tag"+contatag1+"_"+conta1);
+            linktag2.setAttribute("id","tag"+contatag1+"_"+conta2);
+            document.getElementById("img"+contatag1).appendChild(img);
+            document.getElementById("p"+contatag1).appendChild(desc);
+            document.getElementById("p"+contatag1).appendChild(linktag1);
+            document.getElementById("p"+contatag1).appendChild(linktag2);
+            document.getElementById("tag"+contatag1+"_"+conta1).appendChild(tag1);
+            document.getElementById("tag"+contatag1+"_"+conta2).appendChild(tag2);
+        }
+    }
+}

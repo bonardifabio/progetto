@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>L'Eco di JAC</title>
+</head>
+<body>
+    <div class="intestazione">
+        <div class="top"><p id="data" class="item1"></p>
+            <!-- <p id="acc_reg"><span>Accedi</span><span>Registrati</span></p> -->
+            <img src="./risorse/omino.jpg" alt="Accedi o Registrati" class="item1" onclick=OnNuovo()>
+        </div>
+        <div class="overlay" onclick="chiudimodal()"></div>
+        <div class="modale" id="modale">
+            <div class="modale-cont">
+                <span class="close" onclick=chiudimodal()>&times;</span>
+                <form action="">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Inserire username">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Inserire password">
+                    <button type="submit">Accedi</button>
+                </form>
+                <p class="registrazione">oppure <a href="./registrazione.html">Registrati</a></p>
+            </div>
+        </div>
+        <div class="titolo">
+            <a href="./index.html"><h1><span id="eco">L'Eco di </span><span>J</span>AC</h1></a>
+        </div>
+        <div class="navbar">
+            <!-- <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">Cronaca</a></li>
+                <li><a href="#contact">Cultura e spettacoli</a></li>
+                <li><a href="#about">Sport</a></li>
+            </ul> -->
+            <div class="item2" title="Home"><a href="./index.html">Home</a></div>
+            <div class="item2" title="Cronaca"><a href="./cronaca.html">Cronaca</a></div>
+            <div class="item2" title="Cultura"><a href="./cultura.html">Cultura</a></div>
+            <div class="item2" title="Economia"><a href="./economia.html">Economia</a></div>
+            <div class="item2" title="Sport"><a href="./sport.html">Sport</a></div>
+        </div>
+    </div>
+    <!-- fine intestazione, inizio corpo -->
+    <div class="sfondo">
+        <div class="bottom">
+            <h2 class="scottanti"><span>Cronaca</span></h2>
+            <div class="articoli">
+                <a href="./articolo1.html">
+                    <div class="articolopari" id="articolo1">
+                        <div class="img" id="img1"></div>
+                        <div class="p" id="p1"></div>
+                    </div>
+                </a>
+                <hr>
+                <a href="./articolo3.html">
+                    <div class="articolodis" id="articolo3">
+                        <div class="img" id="img2"></div>
+                        <div class="p" id="p2"></div>
+                    </div>
+                </a>
+                <hr>
+                <a href="./articolo6.html">
+                    <div class="articolopari" id="articolo6">
+                        <div class="img" id="img3"></div>
+                        <div class="p" id="p3"></div>
+                    </div>
+                </a>
+                <hr>
+            </div>
+            <img src="./risorse/logo.jpg" alt="logo" class="logo">
+        </div>
+    </div>
+     <script src="cro.js"></script>
+</body>
+</html>
