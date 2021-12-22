@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "61bc51f8dc73e7e5dcc9aeee"
+  },
+  "IDArticolo": "art1",
+  "descrizione": "I rumori più recenti dicono che il fondatore di Jobs Academy, nonchè Daniele Nembrini, si sia lasciato scappare qualche complimento rivolto alle università italiane, è tutto vero.",
+  "linkImm": "./risorse/daniele_nembrini.jpg",
+  "__v": 0,
+  "tags": [
+    "#Cultura",
+    "#Cronaca"
+  ]
+},{
+  "_id": {
+    "$oid": "61bfa6842986f8d9af5e7d3a"
+  },
+  "IDArticolo": "art2",
+  "descrizione": "Il corpo studentesco della Jobs Academy ha inventato un nuovo sport estremo, la CONI ne sta valutando l'inserimento nelle prossime olimpiadi: si tratta della staffetta con il badge.",
+  "linkImm": "./risorse/badge.jpg",
+  "tags": [
+    "#Sport",
+    "#Cultura"
+  ]
+},{
+  "_id": {
+    "$oid": "61c03fb0a7fe568f73dbd6ec"
+  },
+  "IDArticolo": "art3",
+  "descrizione": "La Jobs Academy ha risparmiato 20.000€ quest'anno trattenendo  10 ml di prodotto da ogni caffè erogato dalle macchinette.L'ufficio operations sta già valutando se ripetere la manovra anche l'anno prossimo, eliminando altri 10 ml di caffè da ogni porzione. ",
+  "linkImm": "./risorse/caffe.jpeg",
+  "tags": [
+    "#Economia",
+    "#Cronaca"
+  ]
+},{
+  "_id": {
+    "$oid": "61c06002a7fe568f73dbd6ed"
+  },
+  "IDArticolo": "art4",
+  "descrizione": "Gli studenti di Jobs Academy del corso Cloud development hanno creato un nuovo social network che sta riscontrando un successo inaudito, per ora è il secondo social più scaricato in tutti gli store dopo instagram.",
+  "linkImm": "./risorse/insta.jpg",
+  "tags": [
+    "#Economia",
+    "#Cultura"
+  ]
+},{
+  "_id": {
+    "$oid": "61c06727a7fe568f73dbd6ee"
+  },
+  "IDArticolo": "art5",
+  "descrizione": "La squadra scolastica di curling della fondazione Jobs Academy si è classificata prima ai mondiali, vincendo il montepremio di 1.000.000 di euro. I nostri atleti si preparano in vista della partita contro la nazionale finlandese.",
+  "linkImm": "./risorse/curling.jpg",
+  "tags": [
+    "#Sport",
+    "#Economia"
+  ]
+},{
+  "_id": {
+    "$oid": "61c069cba7fe568f73dbd6ef"
+  },
+  "IDArticolo": "art6",
+  "descrizione": "Venerdì 24 Dicembre 2021, nella vigilia di Natale, si terrà l'incontro di MMA più atteso dell'anno. Il team della sede dell'oratorio della Jobs Academy si scontrerà con quello della sede principale per stabilire chi dominerà nella zona.",
+  "linkImm": "./risorse/mma.jpg",
+  "tags": [
+    "#Sport",
+    "#Cronaca"
+  ]
+}]
